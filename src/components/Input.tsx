@@ -2,7 +2,7 @@ import React, { forwardRef, Ref } from 'react';
 import { TextInput, Text, View, StyleSheet, TextInputProps, ViewStyle, TextStyle } from 'react-native';
 
 // Import the colors if not provided as a prop
-import { colors as defaultColors } from '../Colors';
+import { colors as defaultColors } from '../colors';
 
 interface InputProps extends TextInputProps {
   placeholder?: string;
