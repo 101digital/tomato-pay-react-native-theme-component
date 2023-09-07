@@ -1,33 +1,84 @@
-export type ThemeColorProps = {
-  primaryColor?: string;
-  secondaryColor?: string;
-  primaryTextColor?: string;
-  secondaryTextColor?: string;
-  primaryButtonColor?: string;
-  secondaryButtonColor?: string;
-  primaryButtonLabelColor?: string;
-  secondaryButtonLabelColor?: string;
-  mainBackgroundColor?: string;
-  secondaryBackgroundColor?: string;
-  dividerColor?: string;
-  appBarBackgroundColor?: string;
-  appBarTextColor?: string;
-  loadingIndicatorColor?: string;
-};
+export const colors = {
+  primary: '#EF24B8',
+  secondary: '#14BDEB',
+  button: '#EF24B8',
+  secondaryButton: '#EAEAEB',
+  primaryText: '#1D1C1D',
+  secondaryText: '#4E4B50',
+  placeholder: '#BAB7BB',
+  errorBorder: '#D32F2F',
+  error: '#D32F2F',
+  background: '#F5F5F5',
+  tabInactive: '#C5C5C5',
 
-export const defaultColors: ThemeColorProps = {
-  primaryColor: '#0073F0',
-  secondaryColor: '#0073F0',
-  primaryTextColor: '#0C3F79',
-  secondaryTextColor: '#0C3F79',
-  primaryButtonColor: '#0073F0',
-  secondaryButtonColor: '#ffffff',
-  primaryButtonLabelColor: '#ffffff',
-  secondaryButtonLabelColor: '#0073F0',
-  mainBackgroundColor: '#ffffff',
-  secondaryBackgroundColor: '#f7f9fb',
-  dividerColor: '#e2e2e2',
-  appBarBackgroundColor: '$ffffff',
-  appBarTextColor: '#0C3F79',
-  loadingIndicatorColor: '#0073F0',
+  // New Colors
+  text: '#343A40',
+  accent: '#FF6F61',
+  success: '#28A745',
+  white: '#FFFFFF',
+  darkPrimary: '#FFCC00',
+  separator: '#e2e2e2',
+  heading: '#010101',
+  subtitle: '#666666',
+  placeholder2: '#8b8b8b',
+  lightGray: '#f1f1f1',
+  gray: '#8b8b8b',
+  disabled: '#F5F5F5',
+  darkIndigo: '#0d2050',
+  darkBlue: '#244065',
+  purpleBlue: '#5d21d2',
+  hunterGreen: '#051d0d',
+  paleGrey: '#f2f3f5',
+  paleGreyTwo: '#f4f8fb',
+  paleGreyThree: '#f7f9fb',
+  paleGreyFour: '#f4f8fb',
+  paleFour: '#f4f8fb',
+  paleFive: '#f4f8fb',
+  paleSix: '#f4f8fb',
+  paleSeven: '#f4f8fb',
+  lightBlue: '#E9F0FC',
+  blue: '#4E7ED8',
+  almostBlack: '#09101d',
+  orange: '#FFA500',
+  pinkishGrey: '#bfbfbf',
+  red: '#F40000',
+  black: '#000000',
+  darkerGrey: '#8E8E93',
+  offWhite: '#FCFCFC',
+  progressTitle: '#666666',
+  progressBackground: '#00BA88',
+  alertTitle: '#010101',
+  alertSubtitle: '#4D4D4D',
+  boldSubTitle: '#1A1A1A',
+  lightBorderColor: '#F0F0F0',
+  neutral600: '#4D4D4D',
+
+  // Loyalty Screen Colors
+  primaryBlackColor: '#EF24B8',
+  neutral500: '#666666',
+  neutral900: '#010101',
+  eternalBlue100: '#F8F8FB',
+  green: '#00BA88',
+  black1B: '#1B1B1B',
+  lightGrayD: '#DDDDDD',
+  darkGrey: '#858585',
+  ligthGrayT: '#777777',
+  grayScale: '#14142B',
+  blackColor: '#010101',
+  red500: '#EF4444',
+  hifiPurpleBlue: '#A79EF4',
+  productBNPLBGColor: '#A79EF4',
+  hifiPink: '#B52583',
+  productCABGColor: '#EF80A3',
+  productPFBGColor: '#DF72E0',
+  neutral700: '#343434',
+  grayBackground: '#DEDEDE',
+  neutral999: '#999999',
+  toastBackground: '#FFF8F8',
+  backgroundBannerOnboarding: '#f79a23',
+
+  // Custom Colors
+  pink: '#FF69B4',
+  purple: '#800080',
+  // Add more custom colors here
 };
