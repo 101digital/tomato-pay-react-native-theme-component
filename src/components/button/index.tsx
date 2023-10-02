@@ -67,8 +67,7 @@ const Button = (props: ButtonProps) => {
         variant === 'primary' ? styles.primaryContainerStyle : styles.secondaryContainerStyle,
         {
           opacity,
-          backgroundColor: _backgroundColor,
-          width:'100%'
+          backgroundColor: _backgroundColor
         },
       ]}
       activeOpacity={0.8}
