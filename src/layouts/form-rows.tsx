@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, SafeAreaView, View } from 'react-native';
+import { StyleSheet, SafeAreaView, View ,ScrollView} from 'react-native';
 import { fonts } from '@/assets/fonts';
 import { colors } from '@/assets/Colors';
 interface LayoutsProps {
@@ -14,9 +14,9 @@ const styles: Record<string, any> = {
   },
   wrapper: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: colors.White,
+    // justifyContent: 'center',
+    // alignItems: 'center',
+    // backgroundColor: colors.White,
   }
   // Define styles for other types here
 };
@@ -24,9 +24,9 @@ const styles: Record<string, any> = {
 const FormRows: React.FC<LayoutsProps> = ({ children }) => {
 
   return (
-    <SafeAreaView style={styles.container}>
+    <ScrollView style={styles.container}>
       <View style={styles.wrapper}>{children}</View>
-    </SafeAreaView>
+    </ScrollView>
   );
 };
 
