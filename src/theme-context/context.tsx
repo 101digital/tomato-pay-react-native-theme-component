@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { useMemo, useState } from 'react';
+import React, { useEffect } from "react";
+import { useMemo, useState } from "react";
 // import { ErrorModalStyles } from '../error-modal';
 // import defaultErrorModalTheme from '../error-modal/theme';
 // import { AlertModalStyles } from '../alert';
@@ -7,9 +7,9 @@ import { useMemo, useState } from 'react';
 // import { BottomSheetModalStyles } from '../bottom-sheet';
 // import defaultBottomSheetTheme from '../bottom-sheet/theme';
 // import { ButtonStyles } from '../button';
-import defaultButtonTheme from '../components/button/theme';
-import { defaultColors, ThemeColorProps } from '../colors';
-import { defaultFont, ThemeFontProps } from '../fonts';
+import defaultButtonTheme from "../components/button/theme";
+import { defaultColors, ThemeColorProps } from "../colors";
+import { defaultFont, ThemeFontProps } from "../fonts";
 // import { InputFieldStyles } from '../input-field';
 // import defaultInputFieldTheme from '../input-field/theme';
 // import { InputPhoneNumberStyles } from '../input-phone-number';
@@ -31,7 +31,10 @@ import { defaultFont, ThemeFontProps } from '../fonts';
 // import { LoadingModalStyles } from '../loading-modal';
 // import defaultLoadingModalStyles from '../loading-modal/theme';
 //
-export const defaultTheme = (fonts: ThemeFontProps, colors: ThemeColorProps): ThemeProps => {
+export const defaultTheme = (
+  fonts: ThemeFontProps,
+  colors: ThemeColorProps
+): ThemeProps => {
   return {
     colors: defaultColors,
     button: defaultButtonTheme(fonts, colors),
@@ -82,7 +85,7 @@ export interface ThemeContextData {
   // dateRangePicker: DateRangePickerStyles;
   // checkBox: CheckBoxStyles;
   // loadingModal: LoadingModalStyles;
-  // i18n?: any;
+  i18n?: any;
   // countries: CountryInformation[];
   // deviceCountryCode: string;
   // isLoadingCountry: boolean;
@@ -110,9 +113,13 @@ export const themeDefaultValue: ThemeContextData = {
   // loadingModal: {},
 };
 
-export const ThemeContext = React.createContext<ThemeContextData>(themeDefaultValue);
+export const ThemeContext =
+  React.createContext<ThemeContextData>(themeDefaultValue);
 
-export const useThemeContextValue = (initial: ThemeProps, initI18n?: any): ThemeContextData => {
+export const useThemeContextValue = (
+  initial: ThemeProps,
+  initI18n?: any
+): ThemeContextData => {
   const [colors] = useState<ThemeColorProps>(initial.colors ?? {});
   // const [fonts] = useState<ThemeFontProps>(initial.fonts ?? {});
   const [button] = useState<ButtonStyles>(initial.button ?? {});
@@ -122,7 +129,7 @@ export const useThemeContextValue = (initial: ThemeProps, initI18n?: any): Theme
   // const [inputPhoneNumber] = useState<InputPhoneNumberStyles>(initial.inputPhoneNumber ?? {});
   // const [errorModal] = useState<ErrorModalStyles>(initial.errorModal ?? {});
   // const [countryPicker] = useState<CountryPickerStyles>(initial.countryPicker ?? {});
-  // const [i18n] = useState<any>(initI18n);
+  const [i18n] = useState<any>(initI18n);
   // const [countries, setCountries] = useState<CountryInformation[]>([]);
   // const [deviceCountryCode, setDeviceCountryCode] = useState<string>('65');
   // const [isLoadingCountry, setLoadingCountry] = useState(false);
@@ -218,7 +225,7 @@ export const useThemeContextValue = (initial: ThemeProps, initI18n?: any): Theme
       // bottomSheet,
       // inputField,
       // inputPhoneNumber,
-      // i18n,
+      i18n,
       // errorModal,
       // countries,
       // deviceCountryCode,
@@ -239,7 +246,7 @@ export const useThemeContextValue = (initial: ThemeProps, initI18n?: any): Theme
       // bottomSheet,
       // inputField,
       // inputPhoneNumber,
-      // i18n,
+      i18n,
       // errorModal,
       // countries,
       // deviceCountryCode,
