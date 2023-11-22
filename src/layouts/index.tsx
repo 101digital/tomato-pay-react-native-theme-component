@@ -5,6 +5,7 @@ import { colors } from '@/assets/Colors';
 import BottomStickyContent from './bottom-sticky-content';
 import FormRows from './form-rows';
 import FormColumn from './form-columns';
+import Container from './container';
 interface LayoutsProps {
   type: string; // Define a more generic type
 }
@@ -20,11 +21,17 @@ const Layouts: React.FC<LayoutsProps> = ({ children, type }) => {
         {children}
       </BottomStickyContent>
     );
-  } else {
+  } else if (type === 'form') {
     return (
       <FormRows>
         {children}
       </FormRows>
+    );
+  } else {
+    return (
+      <Container>
+        {children}
+      </Container>
     );
   }
 };
