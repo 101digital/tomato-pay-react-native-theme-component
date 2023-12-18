@@ -9,8 +9,7 @@ interface LayoutsProps {
 // Define a mapping of styles for different types
 const styles: Record<string, any> = {
   container: {
-    flex: 1,
-
+    flexGrow:1
   },
   wrapper: {
     flex: 1,
@@ -24,7 +23,7 @@ const styles: Record<string, any> = {
 const FormRows: React.FC<LayoutsProps> = ({ children }) => {
 
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView contentContainerStyle={styles.container}>
       <View style={styles.wrapper}>{children}</View>
     </ScrollView>
   );
